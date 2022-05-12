@@ -106,6 +106,76 @@
     font-size: 20px;
     color: white;
   }
+
+  .working {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0;
+    width: calc(100% - 60px);
+  }
+
+  .working h2 {
+    margin: 0;
+    font-size: 30px;
+    padding-bottom: 25px;
+  }
+
+  .working__ol--list {
+    counter-reset: counter-ol;
+    list-style: none;
+    padding: 0 18px;
+  }
+
+  .working__ol--list button {
+    background-color: #f6f6f6;
+    box-shadow: 0 2px 10px lightgray;
+    border: none;
+    border-radius: 25px;
+    padding: 30px 0 30px 15px;
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .working__ol--list span {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .working__ol--list i {
+    position: absolute;
+    left: 45px;
+    top: 38%;
+    font-size: 20px;
+    color: darkslategray;
+  }
+
+  .working__ol--list li:last-child i {
+    color: #9356DC;
+  }
+
+  .working__ol--list li {
+    counter-increment: counter-ol;
+    position: relative;
+    width: 100%;
+  }
+
+  .working__ol--list li::before {
+    position: absolute;
+    content: counter(counter-ol);
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background: rgb(147, 86, 220);
+    border-radius: 50%;
+    text-align: center;
+    left: -15px;
+    z-index: 1;
+    line-height: 210%;
+    width: 36px;
+    height: 36px;
+    top: 35%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
