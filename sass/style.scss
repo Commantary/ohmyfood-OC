@@ -12,6 +12,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@media all and (max-width: 480px){
-  @import "mobile";
-}
+@import "footer";
+
+@import "mobile-main";
+
+/*@media all and (max-width: 480px){
+
+}*/
