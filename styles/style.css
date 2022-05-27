@@ -75,6 +75,9 @@ footer ul p {
   align-items: last baseline;
   width: 100%;
 }
+.food__header a {
+  color: black;
+}
 .food__header i {
   font-size: 30px;
   margin-right: 40px;
