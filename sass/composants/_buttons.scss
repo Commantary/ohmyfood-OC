@@ -1,7 +1,5 @@
 .btn-primary {
-
   &--gradient {
-    background: rgb(147,86,220);
     background: linear-gradient(350deg, $color-primary 0%, $color-secondary 100%);
   }
 
@@ -18,5 +16,4 @@
       filter: brightness(105%);
     }
   }
-
 }
