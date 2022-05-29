@@ -1,19 +1,23 @@
 .btn-primary {
-  &--gradient {
-    background: linear-gradient(350deg, $color-primary 0%, $color-secondary 100%);
+  padding: 0;
+  border-radius: 50px;
+  border: none;
+  height: 70px;
+  cursor: pointer;
+  background: linear-gradient(350deg, $color-primary 0%, $color-secondary 100%);
+  box-shadow: 0 2px 10px darkgray;
+  filter: brightness(100%);
+  transition: box-shadow .5s, filter .5s;
+
+  &:hover {
+    box-shadow: 0 2px 10px gray;
+    filter: brightness(105%);
   }
 
-  &--shadow {
-    box-shadow: 0 2px 10px darkgray;
-  }
-
-  &--hover {
-    filter: brightness(100%);
-    transition: box-shadow .5s, filter .5s;
-
-    &:hover {
-      box-shadow: 0 2px 10px gray;
-      filter: brightness(105%);
-    }
+  span {
+    margin: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
   }
 }
