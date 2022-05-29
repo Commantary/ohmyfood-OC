@@ -74,18 +74,18 @@
       margin: 0;
     }
 
-    section p:nth-child(2) {
-      font-weight: 600;
-    }
-
     i {
       visibility: hidden;
       display: none;
     }
 
-    section {
+    div {
       display: flex;
       justify-content: space-between;
+
+      p:nth-child(2) {
+        font-weight: 600;
+      }
     }
   }
 
