@@ -242,3 +242,17 @@
     }
   }
 }
+
+@media all and (min-width: 768px) {
+  .working {
+    align-items: center;
+
+    h2 {
+      width: 100%;
+    }
+
+    ol {
+      width: 60%;
+    }
+  }
+}

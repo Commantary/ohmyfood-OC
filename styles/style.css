@@ -37,36 +37,37 @@ footer {
   color: white;
   padding: 40px 30px;
 }
-
 footer h1 {
   margin-top: 0;
   font-family: "Shrikhand", sans-serif;
   font-weight: 300;
 }
-
 footer ul {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
-
 footer ul li {
   display: flex;
   align-items: center;
   font-weight: 500;
 }
-
 footer ul i {
   width: 30px;
 }
-
 footer ul p {
   margin: 5px 0;
 }
 
-/*@media all and (max-width: 480px) {
-
-}*/
+@media all and (min-width: 768px) {
+  footer h1 {
+    text-align: center;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .food__header {
   display: flex;
   flex-direction: column;
@@ -78,7 +79,7 @@ footer ul p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: last baseline;
+  align-items: baseline;
   width: 100%;
 }
 .food__header a {
@@ -315,6 +316,17 @@ footer ul p {
   -webkit-text-fill-color: transparent;
 }
 
+@media all and (min-width: 768px) {
+  .working {
+    align-items: center;
+  }
+  .working h2 {
+    width: 100%;
+  }
+  .working ol {
+    width: 60%;
+  }
+}
 .food__container {
   display: flex;
   flex-direction: column;
@@ -352,7 +364,7 @@ footer ul p {
 .food__title-menu::before {
   content: "";
   position: absolute;
-  width: 12%;
+  width: 50px;
   height: 4px;
   background-color: #97e1ce;
   top: calc(100% + 5px);
@@ -396,6 +408,16 @@ footer ul p {
 .food__command {
   margin: 40px auto 60px auto;
   width: 250px;
+}
+@media all and (min-width: 1024px) {
+  .food__card {
+    width: calc(30% - 10px);
+  }
+  .food__menus-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

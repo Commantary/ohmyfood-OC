@@ -40,7 +40,7 @@
     &::before {
       content: '';
       position: absolute;
-      width: 12%;
+      width: 50px;
       height: 4px;
       background-color: #97e1ce;
       top: calc(100% + 5px);
@@ -92,5 +92,23 @@
   &__command {
     margin: 40px auto 60px auto;
     width: 250px;
+  }
+
+  &__menus-choice {
+    ;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .food {
+    &__card {
+      width: calc(30% - 10px);
+    }
+
+    &__menus-choice {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }
