@@ -1,0 +1,26 @@
+.heart-icon {
+  font-size: 30px;
+  position: absolute;
+
+  &:hover + i {
+    opacity: 1;
+  }
+
+  &.far {
+    opacity: 1;
+    transition: opacity 250ms;
+    z-index: 1;
+
+    &:hover {
+      opacity: 0;
+    }
+  }
+
+  &.fas {
+    opacity: 0;
+    transition: opacity 250ms;
+    background-image: linear-gradient(350deg, $color-primary 0%, $color-secondary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

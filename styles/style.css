@@ -6,6 +6,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.limit-width {
+  max-width: 1500px;
+  width: 100%;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -30,6 +35,29 @@
   font-weight: 500;
   font-size: 20px;
   color: white;
+}
+
+.heart-icon {
+  font-size: 30px;
+  position: absolute;
+}
+.heart-icon:hover + i {
+  opacity: 1;
+}
+.heart-icon.far {
+  opacity: 1;
+  transition: opacity 250ms;
+  z-index: 1;
+}
+.heart-icon.far:hover {
+  opacity: 0;
+}
+.heart-icon.fas {
+  opacity: 0;
+  transition: opacity 250ms;
+  background-image: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -242,14 +270,17 @@ footer ul p {
 .menu {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   padding-top: 70px;
   background-color: #f6f6f6;
 }
-.menu section {
+.menu__container {
   display: flex;
   flex-direction: column;
   margin: 0 30px;
+  width: calc(100% - 100px);
+  padding-bottom: 80px;
 }
 .menu h2 {
   margin: 0;
@@ -265,9 +296,7 @@ footer ul p {
   box-shadow: 0 2px 10px lightgray;
   margin-bottom: 30px;
   position: relative;
-}
-.menu__link:last-child {
-  margin-bottom: 80px;
+  width: 100%;
 }
 .menu__link span {
   position: absolute;
@@ -298,6 +327,9 @@ footer ul p {
   padding: 0 20px;
   color: black;
 }
+.menu__link figure figcaption div:nth-child(2) {
+  position: relative;
+}
 .menu__link figure h3 {
   font-weight: bold;
   font-size: 20px;
@@ -310,13 +342,15 @@ footer ul p {
 }
 .menu__link figure i {
   margin-right: 10px;
-  font-size: 30px;
-  background-image: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  top: -15px;
+  left: -30px;
 }
 
 @media all and (min-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+
   .working {
     align-items: center;
   }
@@ -327,9 +361,30 @@ footer ul p {
     width: 60%;
   }
 }
+@media all and (min-width: 1450px) {
+  .menu__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .menu__link {
+    width: 45% !important;
+  }
+
+  .working ol {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .working ol li {
+    width: 25%;
+  }
+}
 .food__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: -51px;
   padding: 40px 30px;
   z-index: 10;
@@ -350,9 +405,13 @@ footer ul p {
   font-weight: 500;
   font-size: 34px;
 }
-.food__title i {
+.food__title div {
+  position: relative;
+}
+.food__title div i {
   font-size: 30px;
-  margin-right: 15px;
+  top: -10px;
+  right: 0;
 }
 .food__title-menu {
   font-weight: 300;
@@ -394,6 +453,11 @@ footer ul p {
 .food__card h3, .food__card p {
   margin: 0;
 }
+.food__card div p:nth-child(1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 20px;
+}
 .food__card i {
   visibility: hidden;
   display: none;
@@ -417,6 +481,12 @@ footer ul p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .food__title-menu::before {
+    display: none;
+  }
+  .food__title div i {
+    top: -15px;
   }
 }
 

@@ -1,8 +1,10 @@
 @import "./utils/variables";
 
+@import "./base/base";
 @import "./base/typography";
 
 @import "./composants/buttons";
+@import "./composants/heart";
 
 @import "./layout/footer";
 @import "./layout/food_header";

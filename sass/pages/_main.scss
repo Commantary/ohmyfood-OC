@@ -158,14 +158,17 @@
 .menu {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   padding-top: 70px;
   background-color: $color-background-section;
 
-  section {
+  &__container {
     display: flex;
     flex-direction: column;
     margin: 0 30px;
+    width: calc(100% - 100px);
+    padding-bottom: 80px;
   }
 
   h2 {
@@ -183,10 +186,7 @@
     box-shadow: 0 2px 10px lightgray;
     margin-bottom: 30px;
     position: relative;
-
-    &:last-child {
-      margin-bottom: 80px;
-    }
+    width: 100%;
 
     span {
       position: absolute;
@@ -218,6 +218,10 @@
         align-items: center;
         padding: 0 20px;
         color: black;
+
+        div:nth-child(2) {
+          position: relative;
+        }
       }
 
       h3 {
@@ -234,16 +238,18 @@
 
       i {
         margin-right: 10px;
-        font-size: 30px;
-        background-image: linear-gradient(350deg, $color-primary 0%, $color-secondary 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        top: -15px;
+        left: -30px;
       }
     }
   }
 }
 
 @media all and (min-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+
   .working {
     align-items: center;
 
@@ -253,6 +259,33 @@
 
     ol {
       width: 60%;
+    }
+  }
+}
+
+@media all and (min-width: 1450px) {
+  .menu {
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__link {
+      width: 45% !important;
+    }
+  }
+
+  .working {
+    ol {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      li {
+        width: 25%;
+      }
     }
   }
 }
