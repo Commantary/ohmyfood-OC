@@ -114,6 +114,10 @@
 
 @media all and (min-width: 1024px) {
   .food {
+    h2 {
+      text-align: center;
+    }
+
     &__card {
       width: calc(30% - 10px);
     }
@@ -129,10 +133,5 @@
         display: none;
       }
     }
-
-    &__title div i {
-      top: -15px;
-    }
-
   }
 }

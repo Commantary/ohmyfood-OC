@@ -348,7 +348,7 @@ footer ul p {
 }
 
 @media all and (min-width: 768px) {
-  h2 {
+  body:not(.food) h2 {
     text-align: center;
   }
 
@@ -475,6 +475,9 @@ footer ul p {
   width: 250px;
 }
 @media all and (min-width: 1024px) {
+  .food h2 {
+    text-align: center;
+  }
   .food__card {
     width: calc(30% - 10px);
   }
@@ -485,9 +488,6 @@ footer ul p {
   }
   .food__title-menu::before {
     display: none;
-  }
-  .food__title div i {
-    top: -15px;
   }
 }
 
