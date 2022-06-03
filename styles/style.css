@@ -362,7 +362,7 @@ footer ul p {
     width: 60%;
   }
 }
-@media all and (min-width: 1450px) {
+@media all and (min-width: 1024px) {
   .menu__container {
     flex-direction: row;
     flex-wrap: wrap;
