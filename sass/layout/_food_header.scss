@@ -5,36 +5,37 @@
     justify-content: center;
     align-items: center;
     align-content: flex-start;
-  }
 
-  &__header section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
-    width: 100%;
-  }
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: baseline;
+      width: 100%;
+    }
 
-  &__header a {
-    color: black;
-  }
+    a {
+      color: black;
+    }
 
-  &__header i {
-    font-size: 30px;
-    margin-right: 40px;
-  }
+    i {
+      font-size: 30px;
+      margin-right: 40px;
+    }
 
-  &__header img {
-    height: 300px;
-    object-fit: cover;
-    width: 100%;
-  }
+    img {
+      height: 300px;
+      object-fit: cover;
+      width: 100%;
+    }
 
-  &__header h2 {
-    font-size: $logo-height;
-    font-family: 'Shrikhand', sans-serif;
-    font-weight: bold;
-    margin-bottom: 12px;
-    margin-right: 25%;
+    h2 {
+      font-size: $logo-height;
+      font-family: 'Shrikhand', sans-serif;
+      font-weight: bold;
+      margin-bottom: 12px;
+      margin-top: 20px;
+      margin-right: 25%;
+    }
   }
 }
