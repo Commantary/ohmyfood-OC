@@ -1,6 +1,7 @@
-.heart-icon {
+@mixin heart-animation {
   font-size: 30px;
   position: absolute;
+  cursor: pointer;
 
   &:hover + i {
     opacity: 1;

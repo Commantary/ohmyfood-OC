@@ -31,8 +31,14 @@ footer {
       width: 30px;
     }
 
-    p {
+    a {
       margin: 5px 0;
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

@@ -1,0 +1,9 @@
+.#{$heart-animations-class} {
+  @include heart-animation;
+}
+
+
+.#{$btn-animation-class} {
+  @include btn-animation;
+}
+
