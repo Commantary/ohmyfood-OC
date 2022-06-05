@@ -1,0 +1,16 @@
+@mixin food-card-animation {
+  & article:hover {
+    & div:nth-child(1) {
+      width: calc(100% - 170px) !important;
+    }
+
+    & div:nth-child(3) {
+      width: 50px !important;
+      padding: 15px !important;
+    }
+
+    & i {
+      transform: rotate(360deg) !important;
+    }
+  }
+}
