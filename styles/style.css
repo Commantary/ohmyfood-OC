@@ -845,6 +845,7 @@ footer ul a:hover {
   justify-content: space-between;
   height: 100%;
   width: calc(100% - 110px);
+  transition: width 250ms;
 }
 .food__card article div:nth-child(1) h3 {
   padding-top: 15px;
