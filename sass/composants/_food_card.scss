@@ -1,4 +1,4 @@
-@mixin food-card-animation {
+@mixin food-card-hover-animation {
   & article:hover {
     & div:nth-child(1) {
       width: calc(100% - 170px) !important;
@@ -14,3 +14,41 @@
     }
   }
 }
+
+@mixin food-card-start-animation {
+  // boucle for each food-card in the page
+  @for $i from 0 through 9 {
+    // Get the section of the food-card [2 - 5]
+    $section-child: decimal-floor($i/3) + 2;
+    // Calcule the delay of the animation
+    // 0.15s between each food-card
+    $anim-delay: $i * 0.15;
+
+    section:nth-child(#{$section-child}) {
+      // Get the child of the section [1 - 3]
+      & div a:nth-child(#{$i % 3 + 1}) {
+        animation: food-card-start-animation 750ms ease-in-out forwards;
+        // Set the animation delay 0.
+        animation-delay: #{$anim-delay}s;
+      }
+    }
+  }
+
+  @keyframes food-card-start-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    80% {
+      transform: translateY(0px);
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+
+

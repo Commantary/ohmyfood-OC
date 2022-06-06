@@ -411,6 +411,59 @@ template {
   transform: rotate(360deg) !important;
 }
 
+.food__container section:nth-child(2) div a:nth-child(1) {
+  animation: food-card-start-animation 750ms ease-in-out forwards;
+  animation-delay: 0s;
+}
+.food__container section:nth-child(2) div a:nth-child(2) {
+  animation: food-card-start-animation 750ms ease-in-out forwards;
+  animation-delay: 0.15s;
+}
+.food__container section:nth-child(2) div a:nth-child(3) {
+  animation: food-card-start-animation 750ms ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+.food__container section:nth-child(3) div a:nth-child(1) {
+  animation: food-card-start-animation 750ms ease-in-out forwards;
+  animation-delay: 0.45s;
+}
+.food__container section:nth-child(3) div a:nth-child(2) {
+  animation: food-card-start-animation 750ms ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+.food__container section:nth-child(3) div a:nth-child(3) {
+  animation: food-card-start-animation 750ms ease-in-out forwards;
+  animation-delay: 0.75s;
+}
+.food__container section:nth-child(4) div a:nth-child(1) {
+  animation: food-card-start-animation 750ms ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+.food__container section:nth-child(4) div a:nth-child(2) {
+  animation: food-card-start-animation 750ms ease-in-out forwards;
+  animation-delay: 1.05s;
+}
+.food__container section:nth-child(4) div a:nth-child(3) {
+  animation: food-card-start-animation 750ms ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+.food__container section:nth-child(5) div a:nth-child(1) {
+  animation: food-card-start-animation 750ms ease-in-out forwards;
+  animation-delay: 1.35s;
+}
+@keyframes food-card-start-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 footer {
   background-color: #383838;
   color: white;
@@ -810,6 +863,7 @@ footer ul a:hover {
   background-color: white;
   margin-bottom: 20px;
   box-shadow: 0 2px 10px lightgray;
+  opacity: 0;
 }
 .food__card:hover i {
   display: block;

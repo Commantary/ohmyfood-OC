@@ -8,6 +8,10 @@
 }
 
 .#{$food-card-animation} {
-  @include food-card-animation;
+  @include food-card-hover-animation;
+}
+
+.#{$food-container-animation} {
+  @include food-card-start-animation;
 }
 
