@@ -1,0 +1,57 @@
+@mixin loading-animation {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  animation: loader-anim-fade 2450ms ease-in-out forwards;
+
+  & div {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25vh;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+
+    @for $i from 1 through 8 {
+      $anim-delay: $i * 0.2;
+
+      p:nth-child(#{$i}) {
+        animation: letter-fade 400ms ease-in-out forwards;
+        animation-delay: #{$anim-delay}s;
+      }
+    }
+
+    & p {
+      font-size: 4em;
+      font-family: 'Shrikhand', sans-serif;
+      margin-right: 2px;
+    }
+  }
+
+  @keyframes letter-fade {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes loader-anim-fade {
+    80% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+}

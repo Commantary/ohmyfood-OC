@@ -447,7 +447,7 @@ template {
   animation: food-card-start-animation 750ms ease-in-out forwards;
   animation-delay: 1.2s;
 }
-.food__container section:nth-child(5) div a:nth-child(1) {
+.food__container section:nth-child(-1) div a:nth-child(1) {
   animation: food-card-start-animation 750ms ease-in-out forwards;
   animation-delay: 1.35s;
 }
@@ -461,6 +461,81 @@ template {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  animation: loader-anim-fade 2450ms ease-in-out forwards;
+}
+.loader div {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25vh;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.loader div p:nth-child(1) {
+  animation: letter-fade 400ms ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+.loader div p:nth-child(2) {
+  animation: letter-fade 400ms ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+.loader div p:nth-child(3) {
+  animation: letter-fade 400ms ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+.loader div p:nth-child(4) {
+  animation: letter-fade 400ms ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+.loader div p:nth-child(5) {
+  animation: letter-fade 400ms ease-in-out forwards;
+  animation-delay: 1s;
+}
+.loader div p:nth-child(6) {
+  animation: letter-fade 400ms ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+.loader div p:nth-child(7) {
+  animation: letter-fade 400ms ease-in-out forwards;
+  animation-delay: 1.4s;
+}
+.loader div p:nth-child(8) {
+  animation: letter-fade 400ms ease-in-out forwards;
+  animation-delay: 1.6s;
+}
+.loader div p {
+  font-size: 4em;
+  font-family: "Shrikhand", sans-serif;
+  margin-right: 2px;
+}
+@keyframes letter-fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader-anim-fade {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
 
@@ -928,7 +1003,7 @@ footer ul a:hover {
   text-align: center;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transition: transform 250ms;
+  transition: transform 400ms;
 }
 .food__card h3, .food__card p {
   margin: 0;

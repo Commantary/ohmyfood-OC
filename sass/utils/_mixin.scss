@@ -2,7 +2,6 @@
   @include heart-animation;
 }
 
-
 .#{$btn-animation-class} {
   @include btn-animation;
 }
@@ -15,3 +14,6 @@
   @include food-card-start-animation;
 }
 
+.loader {
+  @include loading-animation;
+}

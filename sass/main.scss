@@ -1,5 +1,4 @@
 @import "./utils/variables";
-@import "./utils/functions";
 
 @import "./base/reset";
 @import "./base/base";
@@ -8,6 +7,7 @@
 @import "./composants/buttons";
 @import "./composants/heart";
 @import "./composants/food_card";
+@import "./composants/loading";
 
 @import "./utils/mixin";
 

@@ -65,7 +65,6 @@
     background-color: white;
     margin-bottom: 20px;
     box-shadow: 0 2px 10px lightgray;
-
     opacity: 0;
 
     &:hover i {
@@ -141,7 +140,7 @@
         text-align: center;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        transition: transform 250ms;
+        transition: transform 400ms;
       }
     }
 
