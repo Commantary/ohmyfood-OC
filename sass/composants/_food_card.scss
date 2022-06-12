@@ -27,9 +27,10 @@
     } @else if $i < 9 {
       $section-child: 4;
     }
+
     // Calcule the delay of the animation
     // 0.15s between each food-card
-    $anim-delay: $i * 0.15 + 2.450;
+    $anim-delay: $i * 0.15 + ($loader-timeout / 1000);
 
     section:nth-child(#{$section-child}) {
       // Get the child of the section [1 - 3]
