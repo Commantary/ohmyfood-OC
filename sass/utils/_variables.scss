@@ -15,6 +15,8 @@ $border-radius-menu: 25px;
 // Limit of the global width
 $max-width: 1500px;
 
+$global-margin: 30px;
+
 // Class variables
 $heart-animations-class: fa-heart;
 $btn-animation-class: btn-primary;
@@ -23,5 +25,5 @@ $food-container-animation: food__container;
 $loading-animation: loader;
 
 // Time variables
-$loader-timeout: 2450;
+$loader-timeout: 2.450;
 $loader-letter-fade-timer: 400;

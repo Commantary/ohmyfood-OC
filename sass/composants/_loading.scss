@@ -6,7 +6,7 @@
   left: 0;
   background-color: white;
   z-index: 10;
-  animation: loader-anim-fade #{$loader-timeout}ms ease-in-out forwards;
+  animation: loader-anim-fade #{$loader-timeout*1000}ms ease-in-out forwards;
 
   & div {
     display: flex;
